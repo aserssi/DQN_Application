@@ -51,7 +51,7 @@ pip install tensorboard tensorboardX matplotlib imageio[ffmpeg] Pillow
 ## 项目运行
 
 ### 1. 训练模型
-运行以下命令开始训练模型。每 200 轮保存一次模型，遇到历史最高分时会自动保存为 `tetris_best`。
+运行以下命令开始训练模型。每 200 轮保存一次模型，遇到历史最高分时会自动保存为 `tetris_best`
 ~~~bash
 python train.py --save_interval 200
 ~~~
@@ -62,7 +62,7 @@ python train.py --save_interval 200
 ~~~bash
 tensorboard --logdir=tensorboard
 ~~~
-随后在浏览器中打开 `http://localhost:6006/`，即可实时查看模型得分 (Score)、消除行数 (Cleared lines) 和损失函数 (Loss) 的变化曲线。
+随后在浏览器中打开 http://localhost:6006/ ，即可实时查看模型得分 (Score)、消除行数 (Cleared lines) 和损失函数 (Loss) 的变化曲线。
 
 ### 3. 测试与生成单张动图
 当模型训练完毕后，运行以下命令验证其实际表现，并生成指定帧率的慢速演示 GIF：
