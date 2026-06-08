@@ -71,7 +71,7 @@ python test.py --model_path models/tetris_best --output_gif figures/output_best.
 ~~~
 
 ### 4. 一键批量生成对比动图
-项目中包含了自动化脚本。只要你在训练时生成了 `tetris_200`, `tetris_400` 等阶段性模型，直接运行此脚本即可一键完成测试、视频录制与 GIF 转换：
+项目中包含了自动化脚本。在训练时生成了 tetris_200, tetris_400 等阶段性模型，直接运行此脚本即可一键完成测试、视频录制与 GIF 转换：
 ~~~bash
 python generate_all_gifs.py
 ~~~
